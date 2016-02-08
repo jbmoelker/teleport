@@ -1,0 +1,16 @@
+{
+  "name": "Teleport",
+  "description": "Teleport to any place in the world using your mobile device.",
+  "version": "0.0.0",
+  "private": true,
+  "main": "index.html",
+  "scripts": {
+    "start": "http-server './' -c-1 -o -a 0.0.0.0 -p 8353",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jasper Moelker <jasper@voorhoede.nl> (https://voorhoede.nl/)",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "0.8.5"
+  }
+}
