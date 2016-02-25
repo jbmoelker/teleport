@@ -20,6 +20,23 @@
 
 <script src="https://maps.google.com/maps/api/js"></script>
 <script src="index.js"></script>
+<script>
+    (function(){
+        'use strict';
+        var supportsDeviceOrientation = ('DeviceOrientationEvent' in window);
+        var supportsWebGL = (function() { // based on http://stackoverflow.com/a/22953053
+            try {
+                var canvas = document.createElement('canvas');
+                return !!window.WebGLRenderingContext && (canvas.getContext('webgl') || canvas.getContext('experimental-webgl'));
+            } catch(e) {
+                return false;
+            }
+        }());
+
+        console.log('supportsDeviceOrientation', supportsDeviceOrientation);
+        console.log('supportsWebGL', supportsWebGL);
+    }());
+</script>
 
 </body>
 </html>
